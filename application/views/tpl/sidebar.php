@@ -58,16 +58,10 @@
                             <a href="#"><i class="fa fa-shopping-cart fa-fw"></i> Sales Orders<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
-                                    <a href="<?php echo base_url(); ?>index.php/sales_orders">All Sales Orders</a>
+                                    <a href="<?php echo base_url(); ?>index.php/sales_orders">All Sales</a>
                                 </li>
                                 <li>
-                                    <a href="<?php echo base_url(); ?>index.php/sales_orders">Create Sales Order</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url(); ?>index.php/sales_orders">Approve Sales Order</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo base_url(); ?>index.php/sales_orders">Void Sales Order</a>
+                                    <a href="<?php echo base_url(); ?>index.php/sales_orders/new">New Sale</a>
                                 </li>
                             </ul>
                             <!-- /.nav-second-level -->
