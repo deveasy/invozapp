@@ -103,7 +103,7 @@
                             <div class="row">
                                 <div class="col-lg-8">
                                     <?php $attributes = array('role'=>'form','id'=>'receiveStockFrm'); ?>
-                                    <?php echo form_open('inventory/restock/'.$location_id.'/'.$location_name, $attributes); ?>
+                                    <?php echo form_open('inventory/restock/$location_id/$location_name', $attributes); ?>
                                         <div class="form-group">
                                             <label>Invoice #</label>
                                             <input type="text" name="waybill_code" class="form-control">

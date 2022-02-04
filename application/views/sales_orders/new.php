@@ -14,66 +14,57 @@
             </div>
             <!-- /. header row -->
             <div class="row">
-                
-                <div class="col-lg-2">
-                    &nbsp;
-                </div>
 
-                <div class="col-lg-8">
+                <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">
-                            Sales Order
+                            Order Details
                         </div>
                         <!-- /.panel-heading -->
                         <div class="panel-body">
-                            <h4><strong>Cahsier: <?php //echo $order->firstname; ?></strong></h4>
-                            <h4><strong>Date: <?php //echo $order->order_date; ?></strong></h4>
-                            <h4><strong>Customer Name: <?php //echo $order->customer; ?></strong></h4>
-                            <br>
-                            <table width="100%" class="table table-hover">
-                                <thead>
-                                    <tr>
-                                        <th>Product Name</th>
-                                        <th>Quantity</th>
-                                        <th>Unit Price</th>
-                                        <th>Amount</th>
-                                        <th></th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <?php
-                                        if(!empty($order_details)){
-                                            $amount = 0.00;
-                                            foreach($order_details as $detail){
-                                                echo '<tr>';
-                                                echo '<td>'.$detail->product_name.'</td>';
-                                                echo '<td>'.$detail->quantity.'</td>';
-                                                echo '<td>'.$detail->unit_price.'</td>';
-                                                echo '<td>'.$detail->extended_price.'</td>';
-                                                echo '<td><a href="#" class="delete"></a> <a href="#">Edit</a></td>';
-                                                echo '</tr>';
-                                                $amount += $detail->extended_price;
-                                            }
-                                        }
-                                    ?>
-                                    <tr>
-                                        <td colspan="3" align="right"><h4 class="amount" style="margin-right: 20px;">TOTAL AMOUNT (GHS)</h4></td>
-                                        <td><h4 class="amount"><?php //echo number_format($amount, 2); ?></h4></td>
-                                        <td></td>
-                                    </tr>
-                                </tbody>
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table table-striped table-bordered table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Quantity</th>
+                                            <th>Price</th>
+                                            <th>Amount</th>
+                                            <th>Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mark</td>
+                                            <td><input type="text" name="somenamebilikethat" maxlength="6" class="form-control" style="width: 60px"></td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Jacob</td>
+                                            <td>Thornton</td>
+                                            <td>@fat</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Larry</td>
+                                            <td>the Bird</td>
+                                            <td>@twitter</td>
+                                            <td>@mdo</td>
+                                            <td>@mdo</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
                             <!-- /.table-responsive -->
                         </div>
                         <!-- /.panel-body -->
                     </div>
                     <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-8 -->
-                
-                <div class="col-lg-2">
-                    &nbsp;
-                </div>
+                <!-- /.col-lg-12 -->
             </div>
             
         </div>

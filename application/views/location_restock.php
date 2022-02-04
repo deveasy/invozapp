@@ -10,8 +10,8 @@
                 <div class="col-lg-12">
                     <h1 class="page-header">
                         Warehouse Restock
-                        <a href="<?php echo base_url(); ?>index.php/inventory/receive_products/<?php echo $warehouse_id . '/' . $warehouse_name; ?>" class="btn btn-primary">Receive New Stock</a>
-                        <a href="<?php echo base_url(); ?>index.php/inventory/warehouse_inventory/<?php echo $warehouse_id . '/' . $warehouse_name; ?>" class="btn btn-primary">Back</a>
+                        <a href="<?php echo base_url(); ?>index.php/inventory/receive_products/<?php //echo $warehouse_id . '/' . $warehouse_name; ?>" class="btn btn-primary">Receive New Stock</a>
+                        <a href="<?php echo base_url(); ?>index.php/inventory/warehouse_inventory/<?php //echo $warehouse_id . '/' . $warehouse_name; ?>" class="btn btn-primary">Back</a>
                     </h1>
                 </div>
                 <!-- /.col-lg-12 -->

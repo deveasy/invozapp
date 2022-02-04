@@ -1,6 +1,16 @@
 <?php
 
 class Sales_orders_model extends CI_Model{
+
+	public function get_products(){
+		$query = $this->db->get('products');
+		if($query->num_rows() > 1){
+			return $query->result();
+		}
+		else{
+			return false;
+		}
+	}
 	
 	public function get_sales_orders(){
 		$query = $this->db->get('sales_orders');
