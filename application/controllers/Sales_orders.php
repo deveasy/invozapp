@@ -36,6 +36,14 @@ class Sales_orders extends CI_Controller {
 		$this->load->view('sales_orders/new', $data);
 	}
 
+	public function productSearchList(){
+		$postData = $this->input->post();
+
+		$data = $this->sales_orders_model->productSearchList($postData);
+
+		echo json_encode($data);
+	}
+
 	function new_order_id(){
 	}
 

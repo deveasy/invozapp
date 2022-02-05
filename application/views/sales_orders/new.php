@@ -13,8 +13,24 @@
                 <!-- /.col-lg-12 -->
             </div>
             <!-- /. header row -->
-            <div class="row">
 
+            <!-- product search row -->
+            <div class="row">
+                <div class="col-lg-2">
+                </div>
+                <div class="col-lg-8">
+                    <div class="form-group">
+                        <label>Search Item</label>
+                        <input type="text" name="search" id="autoSearch" class="form-control" placeholder="Enter to search item">
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                </div>
+            </div>
+            <!-- /.product search row -->
+            
+            <!-- sales details row -->
+            <div class="row">
                 <div class="col-lg-12">
                     <div class="panel panel-default">
                         <div class="panel-heading">

@@ -2,6 +2,7 @@ $(document).ready(function(){
 
 
         var inc = 1;
+        var base_url = window.location;
 
 //ctrlKey, shiftKey, altKey
 
@@ -301,5 +302,29 @@ $(document).ready(function(){
         $("#prescription").append("<p>" + dosage + "</p>");
 
         inc = inc + 1;
+    });
+
+    // Autocomplete product search on new sale page 
+    $( "#autoSearch" ).autocomplete({
+        source: function( request, response ){
+            // Fetch data
+            $.ajax({
+                url: window.location + 'index.php/sales_orders/productSearchList',
+                type: 'post',
+                dataType: "json",
+                data: {
+                search: request.term
+                },
+                success: function( data ) {
+                response( data );
+                }
+            });
+        },
+        select: function (event, ui) {
+            // Set selection
+            $('#autouser').val(ui.item.label); // display the selected text
+            $('#userid').val(ui.item.value); // save selected id to input
+            return false;
+        }
     });
 });

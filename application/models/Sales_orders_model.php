@@ -2,14 +2,21 @@
 
 class Sales_orders_model extends CI_Model{
 
-	public function get_products(){
-		$query = $this->db->get('products');
-		if($query->num_rows() > 1){
-			return $query->result();
+	public function productSearchList($postData){
+		$response = array();
+		
+		if(isset($postData['search'])){
+			// Select record
+			$this->db->select('*');
+			$this->db->where("product_name like '%".$postData['search']."%' ");
+
+			$records = $this->db->get('products')->result();
+
+			foreach($records as $row ){
+				$response[] = array("value"=>$row->product_code,"label"=>$row->unit_price);
+			}
 		}
-		else{
-			return false;
-		}
+		return $response;
 	}
 	
 	public function get_sales_orders(){
