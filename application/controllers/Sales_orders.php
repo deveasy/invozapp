@@ -48,7 +48,7 @@ class Sales_orders extends CI_Controller {
 	}
 
 	function submit_order(){
-		$this->print_order();
+		
 	}
 
 	function filter_by_date(){

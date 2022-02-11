@@ -309,7 +309,7 @@ $(document).ready(function(){
         source: function( request, response ){
             // Fetch data
             $.ajax({
-                url: window.location + 'index.php/sales_orders/productSearchList',
+                url: 'http://localhost/invozapp/index.php/sales_orders/productSearchList',
                 type: 'post',
                 dataType: "json",
                 data: {

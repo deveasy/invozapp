@@ -1,6 +1,6 @@
 
 <?php
-    $data = array('title'=>'View Sales Order');
+    $data = array('title'=>'New Sale');
     $this->load->view('tpl/side_top',$data);
 ?>
             
@@ -53,21 +53,21 @@
                                         <tr>
                                             <td>Mark</td>
                                             <td><input type="text" name="somenamebilikethat" maxlength="6" class="form-control" style="width: 60px"></td>
-                                            <td>@mdo</td>
+                                            <td>25.00</td>
                                             <td>@mdo</td>
                                             <td>@mdo</td>
                                         </tr>
                                         <tr>
                                             <td>Jacob</td>
-                                            <td>Thornton</td>
-                                            <td>@fat</td>
+                                            <td><input type="text" name="somenamebilikethat" maxlength="6" class="form-control" style="width: 60px"></td>
+                                            <td>26.99</td>
                                             <td>@mdo</td>
                                             <td>@mdo</td>
                                         </tr>
                                         <tr>
                                             <td>Larry</td>
-                                            <td>the Bird</td>
-                                            <td>@twitter</td>
+                                            <td><input type="text" name="somenamebilikethat" maxlength="6" class="form-control" style="width: 60px"></td>
+                                            <td>16.00</td>
                                             <td>@mdo</td>
                                             <td>@mdo</td>
                                         </tr>
